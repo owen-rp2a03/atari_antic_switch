@@ -12629,8 +12629,8 @@
 		(at 97.79 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(dnp no)
 		(uuid "fe228385-f161-4487-9fbb-1d871a6f4c18")
 		(property "Reference" "SW2"
