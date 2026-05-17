@@ -7168,6 +7168,180 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Atari8:GTIA"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC2"
+				(at 0 8.382 0)
+				(effects
+					(font
+						(size 1.143 1.143)
+					)
+				)
+			)
+			(property "Value" "GTIA"
+				(at 0 5.842 0)
+				(effects
+					(font
+						(size 1.143 1.143)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
+				(at 8.382 -35.56 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*DIL40*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GTIA_1_1"
+				(rectangle
+					(start -3.81 3.81)
+					(end 3.81 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input clock
+					(at -8.89 0 0)
+					(length 5.08)
+					(name "PAL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -8.89 -2.54 0)
+					(length 5.08)
+					(name "OSC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "GTIA_2_0"
+				(text "VSS"
+					(at 1.524 -4.572 900)
+					(effects
+						(font
+							(size 1.4224 1.4224)
+						)
+					)
+				)
+				(text "VCC"
+					(at 1.8288 4.572 900)
+					(effects
+						(font
+							(size 1.4224 1.4224)
+						)
+					)
+				)
+			)
+			(symbol "GTIA_2_1"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 7.62)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 7.62)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
@@ -8131,6 +8305,17 @@
 		)
 		(uuid "3744607c-b87b-45b5-a194-631406eb24e9")
 	)
+	(text "	   master 	color\nNTSC   3.579545	3.579545\nPAL	   3.546894	4.433618"
+		(exclude_from_sim no)
+		(at 177.8 157.734 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "508748f8-1cf9-4357-93ab-9491721200f3")
+	)
 	(text "in to a8"
 		(exclude_from_sim no)
 		(at 137.414 131.318 90)
@@ -8203,7 +8388,7 @@
 		(uuid "317ec7d4-ff2e-4aaf-b6a8-938b40767be5")
 	)
 	(junction
-		(at 160.02 124.46)
+		(at 165.1 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33c93822-99af-4c43-b6cf-a48834a9a865")
@@ -8470,7 +8655,7 @@
 		(uuid "35179e77-74be-4722-b94e-fca08218367b")
 	)
 	(bus_entry
-		(at 111.76 124.46)
+		(at 111.76 127)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -8515,7 +8700,7 @@
 		(uuid "7eb4f6b3-e331-4dfe-82e9-e3571e748022")
 	)
 	(bus_entry
-		(at 111.76 127)
+		(at 111.76 129.54)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -8648,7 +8833,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 114.3) (xy 144.78 114.3)
+			(xy 157.48 114.3) (xy 144.78 114.3)
 		)
 		(stroke
 			(width 0)
@@ -8668,7 +8853,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 101.6) (xy 116.84 101.6)
+			(xy 162.56 101.6) (xy 116.84 101.6)
 		)
 		(stroke
 			(width 0)
@@ -8708,7 +8893,7 @@
 	)
 	(bus
 		(pts
-			(xy 111.76 114.3) (xy 111.76 124.46)
+			(xy 111.76 114.3) (xy 111.76 127)
 		)
 		(stroke
 			(width 0)
@@ -8738,7 +8923,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 116.84) (xy 144.78 116.84)
+			(xy 160.02 116.84) (xy 144.78 116.84)
 		)
 		(stroke
 			(width 0)
@@ -8768,7 +8953,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 96.52) (xy 160.02 124.46)
+			(xy 165.1 96.52) (xy 165.1 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8798,7 +8983,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 119.38) (xy 162.56 119.38)
+			(xy 162.56 119.38) (xy 167.64 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8878,7 +9063,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 129.54) (xy 160.02 124.46)
+			(xy 165.1 129.54) (xy 165.1 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8898,7 +9083,7 @@
 	)
 	(polyline
 		(pts
-			(xy 147.574 119.38) (xy 157.226 119.38)
+			(xy 147.574 119.38) (xy 162.56 119.38)
 		)
 		(stroke
 			(width 0.25)
@@ -8919,7 +9104,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 127) (xy 157.48 121.92)
+			(xy 162.56 127) (xy 162.56 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8979,7 +9164,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 121.92) (xy 162.56 121.92)
+			(xy 162.56 121.92) (xy 167.64 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9029,6 +9214,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 129.54) (xy 119.38 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5052dadc-ce9d-4ae8-8de8-6f5538bdf30a")
+	)
+	(wire
+		(pts
 			(xy 144.78 63.5) (xy 147.32 63.5)
 		)
 		(stroke
@@ -9049,7 +9244,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 119.38) (xy 157.48 101.6)
+			(xy 162.56 119.38) (xy 162.56 101.6)
 		)
 		(stroke
 			(width 0)
@@ -9059,7 +9254,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 127) (xy 119.38 127)
+			(xy 114.3 129.54) (xy 116.84 129.54)
 		)
 		(stroke
 			(width 0)
@@ -9189,7 +9384,7 @@
 	)
 	(bus
 		(pts
-			(xy 111.76 124.46) (xy 111.76 127)
+			(xy 111.76 127) (xy 111.76 129.54)
 		)
 		(stroke
 			(width 0)
@@ -9249,7 +9444,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 111.76) (xy 152.4 111.76)
+			(xy 167.64 111.76) (xy 157.48 111.76)
 		)
 		(stroke
 			(width 0)
@@ -9259,7 +9454,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 111.76) (xy 152.4 114.3)
+			(xy 157.48 111.76) (xy 157.48 114.3)
 		)
 		(stroke
 			(width 0)
@@ -9299,7 +9494,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 127) (xy 157.48 127)
+			(xy 144.78 127) (xy 162.56 127)
 		)
 		(stroke
 			(width 0)
@@ -9339,7 +9534,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 129.54) (xy 119.38 129.54)
+			(xy 114.3 132.08) (xy 118.11 132.08)
 		)
 		(stroke
 			(width 0)
@@ -9359,7 +9554,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 109.22) (xy 149.86 109.22)
+			(xy 167.64 109.22) (xy 154.94 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9389,7 +9584,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 109.22) (xy 149.86 111.76)
+			(xy 154.94 109.22) (xy 154.94 111.76)
 		)
 		(stroke
 			(width 0)
@@ -9406,6 +9601,16 @@
 			(type default)
 		)
 		(uuid "8cf7f880-3d6d-4ebb-8b74-97583f0aa5e6")
+	)
+	(wire
+		(pts
+			(xy 116.84 127) (xy 119.38 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91f911e9-d2c2-4e8a-9196-11f4d6b506d6")
 	)
 	(wire
 		(pts
@@ -9429,7 +9634,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 114.3) (xy 154.94 116.84)
+			(xy 160.02 114.3) (xy 160.02 116.84)
 		)
 		(stroke
 			(width 0)
@@ -9459,7 +9664,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 114.3) (xy 154.94 114.3)
+			(xy 167.64 114.3) (xy 160.02 114.3)
 		)
 		(stroke
 			(width 0)
@@ -9479,7 +9684,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 129.54) (xy 160.02 129.54)
+			(xy 144.78 129.54) (xy 165.1 129.54)
 		)
 		(stroke
 			(width 0)
@@ -9549,7 +9754,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 124.46) (xy 162.56 124.46)
+			(xy 165.1 124.46) (xy 167.64 124.46)
 		)
 		(stroke
 			(width 0)
@@ -9596,6 +9801,16 @@
 			(type default)
 		)
 		(uuid "c374d5ba-c929-41b9-a338-818cfde513d5")
+	)
+	(wire
+		(pts
+			(xy 116.84 129.54) (xy 116.84 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3afc986-dfc2-44a5-ab42-0d753e387ee7")
 	)
 	(wire
 		(pts
@@ -9729,13 +9944,23 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 111.76) (xy 149.86 111.76)
+			(xy 144.78 111.76) (xy 154.94 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e579b30e-854f-4004-9e1a-06606e7ac4ee")
+	)
+	(wire
+		(pts
+			(xy 118.11 132.08) (xy 118.11 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e623a93c-d72b-4073-89bc-7896059ec033")
 	)
 	(wire
 		(pts
@@ -9790,7 +10015,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 96.52) (xy 109.22 96.52)
+			(xy 165.1 96.52) (xy 109.22 96.52)
 		)
 		(stroke
 			(width 0)
@@ -9979,7 +10204,7 @@
 		(uuid "5c7c145b-1c08-4f15-bcf6-25bc57dee013")
 	)
 	(label "~{READY}"
-		(at 114.3 127 0)
+		(at 114.3 129.54 0)
 		(effects
 			(font
 				(size 0.01 0.01)
@@ -9999,7 +10224,7 @@
 		(uuid "81f15d48-7768-43f3-9a4b-15fc271c5f0a")
 	)
 	(label "~{RESET}"
-		(at 114.3 129.54 0)
+		(at 114.3 132.08 0)
 		(effects
 			(font
 				(size 0.01 0.01)
@@ -11218,7 +11443,7 @@
 	(symbol
 		(lib_name "ANTIC_4")
 		(lib_id "Atari8:ANTIC")
-		(at 180.34 54.61 0)
+		(at 185.42 54.61 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11226,7 +11451,7 @@
 		(dnp no)
 		(uuid "6f069c69-b2ae-411a-91cf-d06660019664")
 		(property "Reference" "U3"
-			(at 170.18 101.3459 0)
+			(at 175.26 101.3459 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11235,7 +11460,7 @@
 			)
 		)
 		(property "Value" "ANTIC_PAL"
-			(at 170.18 103.8859 0)
+			(at 175.26 103.8859 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11244,7 +11469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 100.33 0)
+			(at 203.2 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11253,7 +11478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 54.61 0)
+			(at 185.42 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11261,7 +11486,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 54.61 0)
+			(at 185.42 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11792,6 +12017,81 @@
 			(project "antic_switch"
 				(path "/4c615cf2-db67-4303-ba81-59c705659797"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari8:GTIA")
+		(at 209.55 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7fb2171-6375-4b8b-a9bc-ab73a4ddb338")
+		(property "Reference" "IC2"
+			(at 209.55 133.858 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GTIA"
+			(at 209.55 136.398 0)
+			(effects
+				(font
+					(size 1.143 1.143)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
+			(at 217.932 177.8 0)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 209.55 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "28"
+			(uuid "466c4d05-160d-40ec-9fd1-55198f42dfb4")
+		)
+		(pin "27"
+			(uuid "5a31e9c4-5362-4491-934a-03607b7fb233")
+		)
+		(pin "3"
+			(uuid "62686bb0-476c-4324-80c0-4bbf6d3aba96")
+		)
+		(pin "16"
+			(uuid "cb326873-1e7b-4202-bd67-fa4e1b3ce64d")
+		)
+		(instances
+			(project ""
+				(path "/4c615cf2-db67-4303-ba81-59c705659797"
+					(reference "IC2")
 					(unit 1)
 				)
 			)
